@@ -3,8 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>这里是入门课程</title>
+<!--    <script type="application/javascript" src="jquery-3.4.1.min.js"></script>-->
 </head>
+<style>
+    .title{
+        font-size: 20px;
+        color:red;
+        display: block;
+    }
+</style>
 <body>
-
+<h1 class="title" id="title">这是一个标题</h1>
+<p class="content">这里是内容</p>
 </body>
+<script language="JavaScript">
+    // window.onload= function () {
+	    var title = document.getElementById("title");
+	    title.onclick = function(){
+		    alert("1");
+		    title.style.display = "none"
+	    }
+    // }
+
+    // $('.title').click(function () {
+    //     $(this).html("这里变了,内容消失了");
+    //     $(this).css({"color":"blue","font-size":"40px"})
+    //     $(".content").hide()
+    // })
+</script>
 </html>
