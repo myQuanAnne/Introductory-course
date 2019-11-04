@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1023课后练习</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        ul,li{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        *, *:after, *:before {
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+            outline: none;
+        }
+        h1,h2,h3,h4,h5,h6,p{margin: 0;padding: 0;font-weight: normal}
+        .practice{
+            width: 100%;
+        }
+        .logo_box{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .logo_box .logo{
+            margin: 30px 0;
+        }
+        .nav_box{
+            width: 100%;
+            height: 40px;
+            margin: 0 auto;
+            background: #71c74c;
+        }
+        .nav_box .nav{
+            width: 1200px;
+            margin: 0 auto;
+            color: #fff;
+            font-size: 16px;
+            line-height: 40px;
+            text-align: center;
+        }
+        .nav_item{
+            float: left;
+            display: block;
+            width: 130px;
+            text-align: center;
+            position: relative;
+        }
+        .nav_item a{
+            display: block;
+            color: #fff;
+        }
+        .nav_item .sub_nav{
+            position: absolute;
+            left: 0;
+            overflow: hidden;
+            top: 40px;
+            background: #71c74c;
+            z-index: 2;
+            min-width: 100%;
+            opacity: 0;
+        }
+        .nav_item .sub_nav li{
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            min-width:130px;
+        }
+        .nav_item:hover .sub_nav{
+            opacity: 1;
+        }
+        .activity_box{
+            width: 1208px;
+            margin: 20px auto;
+        }
+        .activity{
+            overflow: hidden;
+        }
+        .activity_item{
+            width: 282px;
+            float: left;
+            margin: 10px;
+        }
+        .activity_item img{
+            width: 282px;
+            height: 200px;
+            margin: 0 auto;
+            display: block;
+        }
+        .activity_item h1{
+            font-size: 18px;
+            text-align: center;
+            margin: 20px 0;
+            color: #666;
+        }
+        .activity_item p{
+            font-size: 14px;
+            color: #999;
+            padding: 20px 30px;
+            text-align: center;
+        }
+        .banner{
+            width: 1200px;
+            height: 300px;
+            margin: 0 auto;
+            background: url("banner01.jpg") no-repeat;
+            background-size: 100% 100%;
+            animation: banner 16s infinite;
+        }
+        @keyframes banner {
+            25%{
+                background: url("banner02.jpg") no-repeat;
+                background-size: 100% 100%;
+            }
+            50%{
+                background: url("banner03.jpg") no-repeat;
+                background-size: 100% 100%;
+            }
+            75%{
+                background: url("banner04.jpg") no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="practice">
+    <div class="logo_box">
+        <img class="logo" src="100qu.png" />
+    </div>
+    <div class="nav_box">
+        <ul class="nav">
+            <li class="nav_item">
+                <a href="#">贷款</a>
+                <ul class="sub_nav">
+                    <li>生意贷</li>
+                    <li>白领贷</li>
+                    <li>极速贷</li>
+                    <li>受邀贷</li>
+                </ul>
+            </li>
+            <li class="nav_item">
+                <a href="#">储蓄类</a>
+                <ul class="sub_nav">
+                    <li>定期存款</li>
+                </ul>
+            </li>
+            <li class="nav_item">
+                <a href="#">理财类</a>
+                <ul class="sub_nav">
+                    <li>中邮保险</li>
+                    <li>中邮人寿</li>
+                    <li>两全保险</li>
+                </ul>
+            </li>
+            <li class="nav_item">
+                <a href="#">信用卡</a>
+                <ul class="sub_nav">
+                    <li>ETC信用卡</li>
+                    <li>EMS联名卡</li>
+                    <li>邮储食堂信用卡</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <ul class="banner">
+
+    </ul>
+    <div class="activity_box">
+        <ul class="activity">
+            <li class="activity_item">
+                <a href="form.html">
+                    <img src="activity.png" />
+                    <h1>2018年高端VIP客户生日积分礼遇</h1>
+                    <p>生日前月末达到白金级且持有VIP卡的客户，生日当月可获得200个积分；生日前月末达到钻石级且持有VIP卡的客户，生日当月可获得500个积分。</p>
+                </a>
+            </li>
+            <li class="activity_item">
+                <a href="form.html">
+                    <img src="activity.png" />
+                    <h1>2018年高端VIP客户生日积分礼遇</h1>
+                    <p>生日前月末达到白金级且持有VIP卡的客户，生日当月可获得200个积分；生日前月末达到钻石级且持有VIP卡的客户，生日当月可获得500个积分。</p>
+                </a>
+            </li>
+            <li class="activity_item">
+                <a href="form.html">
+                    <img src="activity.png" />
+                    <h1>2018年高端VIP客户生日积分礼遇</h1>
+                    <p>生日前月末达到白金级且持有VIP卡的客户，生日当月可获得200个积分；生日前月末达到钻石级且持有VIP卡的客户，生日当月可获得500个积分。</p>
+                </a>
+            </li>
+            <li class="activity_item">
+                <a href="form.html">
+                    <img src="activity.png" />
+                    <h1>2018年高端VIP客户生日积分礼遇</h1>
+                    <p>生日前月末达到白金级且持有VIP卡的客户，生日当月可获得200个积分；生日前月末达到钻石级且持有VIP卡的客户，生日当月可获得500个积分。</p>
+                </a>
+            </li>
+            <li class="activity_item">
+                <a href="form.html">
+                    <img src="activity.png" />
+                    <h1>2018年高端VIP客户生日积分礼遇</h1>
+                    <p>生日前月末达到白金级且持有VIP卡的客户，生日当月可获得200个积分；生日前月末达到钻石级且持有VIP卡的客户，生日当月可获得500个积分。</p>
+                </a>
+            </li>
+            <li class="activity_item">
+                <a href="form.html">
+                    <img src="activity.png" />
+                    <h1>2018年高端VIP客户生日积分礼遇</h1>
+                    <p>生日前月末达到白金级且持有VIP卡的客户，生日当月可获得200个积分；生日前月末达到钻石级且持有VIP卡的客户，生日当月可获得500个积分。</p>
+                </a>
+            </li>
+        </ul>
+
+        display:flex;
+        position: fixed relative absolute;
+        :after :before
+
+    </div>
+</div>
+</body>
+</html>
